@@ -1,0 +1,63 @@
+<html>
+    <script >
+       function dark(){
+        document.body.style.backgroundColor ="black";
+       } 
+        function light(){
+            document.body.style.backgroundColor ="white";
+        }
+        function sum(){
+            var x=parseFloat(document.getElementsByClassName("Add")[0].value);
+           var y=parseFloat(document.getElementsByClassName("Add1")[0].value);
+            var total=x+y;
+            document.getElementById("result").innerText = "Sum is: "  + total;
+            return total;
+        }
+       
+       let grade = prompt("enter the grade");
+      
+    switch(grade){
+        case "A":
+            console.log("excellent");
+            break;
+        case "B":
+            console.log("good");
+            break;
+        case "C":
+            console.log("average");
+            break;
+        case "D":
+            console.log("poor");
+            break;
+        case "F":
+            console.log("fail");
+            break;
+            default:
+                console.log("invalid");
+            
+    }
+    let day=parseInt(prompt(""))
+
+
+        
+    </script>
+    <body>
+
+        <title>ok</title>
+        <button class="dark" onclick= "dark()" onclick="light()">
+            hello
+        </button>
+        <input type="text" class="Add" placeholder="enter a number">
+        <input type="text" class="Add1" placeholder="enter another number">
+        <button class="Add" onclick= "sum()">
+            add
+        </button>
+        
+        <p id="result"></p>
+        <button class="Clear" onclick="clear()">
+            clear
+        </button>
+        <head>hi</head>
+
+    </body>
+</html>
