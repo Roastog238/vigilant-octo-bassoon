@@ -1,0 +1,80 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the todo list */
+#Todo-list {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Form inputs */
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input[type="text"],
+input[type="submit"] {
+    padding: 10px 15px;
+    border: 2px solid #b2dfdb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input[type="text"] {
+    flex-grow: 1;
+}
+
+input[type="submit"] {
+    background-color: #26a69a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #00796b;
+}
+
+/* Task list styling */
+.details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0f2f1;
+}
+
+.details input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #26a69a;
+}
+
+.details label {
+    font-size: 16px;
+    color: #333;
+}
+
+.details li:last-child {
+    border-bottom: none;
+}
